@@ -4,4 +4,7 @@ export const icons = {
     message: require('../assets/icons/message.png'),
     time: require('../assets/icons/time.png'),
     verified: require('../assets/icons/verified.png'),
+    whatsapp: require('../assets/icons/whatsapp.png'),
+    tick: require('../assets/icons/tick.png'),
+    accordion: require('../assets/icons/accordion.png'),
 };
