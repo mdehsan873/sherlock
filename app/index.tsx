@@ -1,7 +1,8 @@
 import React from "react";
-import {SafeAreaView, ScrollView, Text, View} from "react-native";
+import {SafeAreaView, ScrollView} from "react-native";
 import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
+import FaqSection from "@/components/sections/FaqSection";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
           >
               <PopularCitiesSection/>
               <BenefitsSection/>
+              <FaqSection/>
 
           </ScrollView>
 
