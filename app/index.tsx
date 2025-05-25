@@ -1,6 +1,7 @@
 import React from "react";
 import {SafeAreaView, ScrollView, Text, View} from "react-native";
 import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
+import BenefitsSection from "@/components/sections/BenefitsSection";
 
 export default function Index() {
   return (
@@ -10,6 +11,7 @@ export default function Index() {
               contentContainerStyle={{ paddingBottom: 40 }}
           >
               <PopularCitiesSection/>
+              <BenefitsSection/>
 
           </ScrollView>
 

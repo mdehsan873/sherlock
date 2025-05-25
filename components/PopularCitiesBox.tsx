@@ -8,7 +8,7 @@ interface PopularCitiesBoxProps {
 
 const PopularCitiesBox = ({ name }: PopularCitiesBoxProps) => {
     return (
-        <View className="px-4 py-3 border border-solid border-light rounded-lg">
+        <View className="p-4 border border-solid border-light rounded-lg h-full w-full">
             <View className="flex-row items-center space-x-2">
                 <Image
                     source={icons.location}
