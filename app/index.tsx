@@ -3,6 +3,7 @@ import {SafeAreaView, ScrollView} from "react-native";
 import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
 import FaqSection from "@/components/sections/FaqSection";
+import CheckupPlanSection from "@/components/sections/CheckupPlanSection";
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
           >
               <PopularCitiesSection/>
               <BenefitsSection/>
+              <CheckupPlanSection/>
               <FaqSection/>
 
           </ScrollView>
