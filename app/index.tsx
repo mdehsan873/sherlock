@@ -4,6 +4,7 @@ import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
 import FaqSection from "@/components/sections/FaqSection";
 import CheckupPlanSection from "@/components/sections/CheckupPlanSection";
+import GlanceSection from "@/components/sections/GlanceSection";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
               showsVerticalScrollIndicator={false}
               contentContainerStyle={{ paddingBottom: 40 }}
           >
+              <GlanceSection/>
               <PopularCitiesSection/>
               <BenefitsSection/>
               <CheckupPlanSection/>
