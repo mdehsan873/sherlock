@@ -6,8 +6,8 @@ import FaqSection from "@/components/sections/FaqSection";
 import CheckupPlanSection from "@/components/sections/CheckupPlanSection";
 import GlanceSection from "@/components/sections/GlanceSection";
 import ContactUsSection from "@/components/sections/ContactUsSection";
-import {APP_NAME} from "@/constants/app";
 import TopBarSection from "@/components/sections/TopBarSection";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function Index() {
   return (
@@ -17,6 +17,7 @@ export default function Index() {
               contentContainerStyle={{ paddingBottom: 40 }}
           >
               <TopBarSection/>
+              <HeroSection/>
               <GlanceSection/>
               <PopularCitiesSection/>
               <BenefitsSection/>
