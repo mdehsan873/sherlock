@@ -7,12 +7,12 @@ import {APP_NAME} from "@/constants/app";
 function BenefitsSection() {
     return (
         <View className="mt-8 px-5">
-            <Text className="text-xl font-bold text-secondary mb-6 font-lexend">
+            <Text className="text-xl font-bold text-secondary mb-6 font-lexend text-center">
                 Benefits of {APP_NAME}
             </Text>
-            <View className="flex-row flex-wrap gap-y-2">
+            <View className="flex-row flex-wrap gap-y-2 justify-center">
                 {BENEFITS.map((benefit) => (
-                    <View key={benefit.title} className="w-1/2 pr-2">
+                    <View key={benefit.title} className="pr-2 w-full xs:w-1/2 sm:w-[45%] md:w-[30%] lg:w-[20%]">
                         <BenefitBox
                             key = {benefit.title}
                             icon= {benefit.icon}

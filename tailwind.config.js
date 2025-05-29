@@ -11,6 +11,10 @@ module.exports = {
         accent: "#63877A", // muted green/teal accent
         light: "#DBE5E3", // light grey background
         white: "#FFFFFF", // Standard white
+        background: "#eceff3"
+      },
+      screens: {
+        'xs': '390px',
       }
     },
   },

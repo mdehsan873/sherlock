@@ -6,12 +6,13 @@ import {GLANCE} from "@/constants/glance";
 function GlanceSection() {
     return (
         <View className="mt-8 px-5">
-            <Text className="text-xl font-bold text-secondary mb-6 font-lexend">
+            <Text className="text-xl font-bold text-secondary mb-6 font-lexend text-center">
                 How {APP_NAME} Helps You
             </Text>
             <FlatList
                 horizontal
                 data={GLANCE}
+                className="flex justify-center"
                 keyExtractor={(item) => item.id}
                 showsHorizontalScrollIndicator={false}
                 ItemSeparatorComponent={() => <View className="m-1"/>}

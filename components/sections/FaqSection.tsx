@@ -5,7 +5,7 @@ import FaqBox from "@/components/FaqBox";
 function FaqSection() {
     return (
         <View className="mt-8 px-5">
-            <Text className="text-xl font-bold text-secondary mb-6 font-lexend">
+            <Text className="text-xl font-bold text-secondary mb-6 font-lexend text-center">
                 Frequently Asked Questions
             </Text>
             <View>
