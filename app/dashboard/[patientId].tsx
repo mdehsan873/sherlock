@@ -1,12 +1,17 @@
-import {useLocalSearchParams} from "expo-router";
+import {router, useLocalSearchParams} from "expo-router";
 import {SafeAreaView, ScrollView, View} from "react-native";
 import React from "react";
 import VisitOverview from "@/components/dashboard/VisitOverview";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import DashboardSummary from "@/components/dashboard/DashboardSummary";
+import PageHeader from "@/components/common/PageHeader";
 
 export default function PatientDashboard() {
     const { patientId } =  useLocalSearchParams();
+
+    const handleBack = () => {
+        router.back();
+    };
 
     // Mock Data
     const username = "Ehsan Ansari"
@@ -19,13 +24,18 @@ export default function PatientDashboard() {
 
     return (
         <SafeAreaView className="flex-1 bg-background">
-            <View className="mx-[10%] mt-10">
-                <ScrollView>
+            <PageHeader title={"Care Dashboard"}/>
+            <ScrollView
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={{ paddingBottom: 10 }}
+                className="flex-1"
+            >
+                <View className="mx-[10%]">
                     <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
                     <VisitOverview {...visitOverview} />
                     <DashboardSummary/>
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     )
 

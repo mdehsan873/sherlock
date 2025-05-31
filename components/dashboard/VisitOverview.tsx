@@ -10,7 +10,7 @@ interface VisitOverviewProps {
 
 const VisitOverview = ({nextVisit, lastVisit}: VisitOverviewProps) => {
     return (
-        (nextVisit || lastVisit) && <View className="my-5 flex-col flex-wrap">
+        (nextVisit || lastVisit) && <View className="my-2.5 flex-col">
             <Text className="text-lg font-bold">
                 Visit Overview
             </Text>
