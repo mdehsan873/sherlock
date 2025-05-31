@@ -5,6 +5,7 @@ import VisitOverview from "@/components/dashboard/VisitOverview";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import DashboardSummary from "@/components/dashboard/DashboardSummary";
 import PageHeader from "@/components/common/PageHeader";
+import Divider from "@/components/common/Divider";
 
 export default function PatientDashboard() {
     const { patientId } =  useLocalSearchParams();
@@ -33,7 +34,9 @@ export default function PatientDashboard() {
                 <View className="mx-[10%]">
                     <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
                     <VisitOverview {...visitOverview} />
+                    <Divider/>
                     <DashboardSummary/>
+
                 </View>
             </ScrollView>
         </SafeAreaView>
