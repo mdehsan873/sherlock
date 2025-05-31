@@ -9,7 +9,7 @@ interface CheckupPlanBoxProps {
 
 const CheckupPlanBox = ({ planName, tests }: CheckupPlanBoxProps) => {
     return (
-            <View className="p-4 border border-solid border-light rounded-lg h-full md:flex md:items-center">
+            <View className="p-4 border border-solid border-grayish_blue rounded-lg h-full md:flex md:items-center">
                 <View className="flex-col px-2 h-full">
                     <Text className="text-base font-semibold text-secondary mb-2">{planName}</Text>
                     {tests.map((test, index) => (

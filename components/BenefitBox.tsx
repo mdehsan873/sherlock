@@ -9,7 +9,7 @@ interface BenefitBoxProps {
 
 const BenefitBox = ({icon, title, description}: BenefitBoxProps) => {
     return (
-        <View className="p-4 border border-solid border-light rounded-lg h-full">
+        <View className="p-4 border border-solid border-grayish_blue rounded-lg h-full">
             <Image
                 source={icon}
                 style={{ maxWidth: 20, maxHeight: 20 }}

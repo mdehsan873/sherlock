@@ -14,7 +14,7 @@ const FaqBox = ({ question, answer }: FaqBoxProps) => {
         <Pressable
         onPress={() => setIsOpen(!isOpen) }
         >
-            <View className="p-4 border border-solid border-light rounded-lg h-full w-full">
+            <View className="p-4 border border-solid border-grayish_blue rounded-lg h-full w-full">
                 <View className="flex-row justify-between items-center px-2">
                     <Text className="text-base font-semibold text-secondary mb-2">{question}</Text>
                     <Image
