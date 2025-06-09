@@ -4,7 +4,7 @@ import {APP_NAME} from "@/constants/app";
 function TopBarSection() {
     return (
         <View className="mt-5 flex flex-row items-center justify-center">
-            <Text className="text-xl font-bold mb-5">
+            <Text className="text-xl font-bold">
                 {APP_NAME}
             </Text>
         </View>

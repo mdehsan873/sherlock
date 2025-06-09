@@ -1,0 +1,10 @@
+import React from "react";
+import {Text} from "react-native";
+
+export default function Index() {
+    return (
+        <Text className="text-center">
+            This is Report
+        </Text>
+    );
+}
