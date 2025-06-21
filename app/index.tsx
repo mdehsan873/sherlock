@@ -1,5 +1,5 @@
 import React from "react";
-import {SafeAreaView, ScrollView} from "react-native";
+import {SafeAreaView, ScrollView, View} from "react-native";
 import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
 import FaqSection from "@/components/sections/FaqSection";
@@ -8,6 +8,7 @@ import GlanceSection from "@/components/sections/GlanceSection";
 import ContactUsSection from "@/components/sections/ContactUsSection";
 import TopBarSection from "@/components/sections/TopBarSection";
 import HeroSection from "@/components/sections/HeroSection";
+import {APP_NAME} from "@/constants/app";
 
 export default function Index() {
   return (
@@ -15,16 +16,18 @@ export default function Index() {
           <ScrollView
               showsVerticalScrollIndicator={false}
               contentContainerStyle={{ paddingBottom: 40 }}
+              className="flex-1"
           >
-              <TopBarSection/>
-              <HeroSection/>
-              <GlanceSection/>
-              <PopularCitiesSection/>
-              <BenefitsSection/>
-              <CheckupPlanSection/>
-              <FaqSection/>
-              <ContactUsSection/>
-
+              <View className="mx-[5%]">
+                  <TopBarSection title={APP_NAME}/>
+                  <HeroSection/>
+                  <GlanceSection/>
+                  <PopularCitiesSection/>
+                  <BenefitsSection/>
+                  <CheckupPlanSection/>
+                  <FaqSection/>
+                  <ContactUsSection/>
+              </View>
           </ScrollView>
 
       </SafeAreaView>

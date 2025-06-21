@@ -31,7 +31,7 @@ export default function PatientDashboard() {
                 contentContainerStyle={{ paddingBottom: 10 }}
                 className="flex-1"
             >
-                <View className="mx-[10%]">
+                <View className="mx-[5%]">
                     <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
                     <VisitOverview {...visitOverview} />
                     <Divider/>
