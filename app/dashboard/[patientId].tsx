@@ -16,8 +16,8 @@ export default function PatientDashboard() {
 
     // Mock Data
     const username = "Ehsan Ansari"
-    const patientName = "John Doe";
-    const patientRelation = "Father";
+    const patientName = "Mohammad Asad";
+    const patientRelation = "Brother";
     const visitOverview = {
         nextVisit: "2021-09-01, 11:00AM",
         lastVisit: "2021-08-01, 12:30PM",
@@ -31,7 +31,7 @@ export default function PatientDashboard() {
                 contentContainerStyle={{ paddingBottom: 10 }}
                 className="flex-1"
             >
-                <View className="mx-[10%]">
+                <View className="mx-[5%] md:mx-[10%]">
                     <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
                     <VisitOverview {...visitOverview} />
                     <Divider/>

@@ -8,5 +8,8 @@ export const icons = {
     tick: require('../assets/icons/tick.png'),
     accordion: require('../assets/icons/accordion.png'),
     calendar: require('../assets/icons/calendar.png'),
-    back: require('../assets/icons/back.png')
+    back: require('../assets/icons/back.png'),
+    home: require('../assets/icons/home.png'),
+    profile: require('../assets/icons/profile.png'),
+    report: require('../assets/icons/report.png')
 };
