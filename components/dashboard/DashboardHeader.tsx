@@ -15,7 +15,7 @@ const DashboardHeader = ({user, patientRelation, patientName}: DashboardHeaderPr
     return (
         <Text className="text-xl font-bold font-lexend mt-5">
             Hi, {renderCapitalizedText(user)}, here's your {renderCapitalizedText(patientName)}
-            {patientRelation ? ` (${patientRelation}) ` : ''}care summary.
+            {patientRelation ? ` (${patientRelation}) ` : ' '}care summary.
         </Text>
     );
 };

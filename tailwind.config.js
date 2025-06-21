@@ -12,7 +12,8 @@ module.exports = {
         light: "#DBE5E3", // light grey background
         white: "#FFFFFF", // Standard white
         background: "#eceff3",
-        grayish_blue: "#CFDBE8"
+        grayish_blue: "#CFDBE8",
+        icon_background: "#F0F5F2"
       },
       screens: {
         'xs': '390px',
