@@ -52,7 +52,7 @@ const SCREEN_CONFIG = [
     },
 ];
 
-function MobileTabs() {
+function TabsNavigation({ isLargeScreen = false }) {
     return (
         <Tabs
             screenOptions={{
@@ -92,17 +92,6 @@ export default function TabsLayout() {
     const {width} = useWindowDimensions();
     const isLargeScreen = width >= 768;
 
-    if (isLargeScreen) {
-        // Placeholder for future large screen navigation implementation
-        return (
-            <Stack
-                screenOptions={{
-                    headerShown: false,
-                }}
-            />
-        );
-    }
-
-    // Use Tab navigation for smaller screens
-    return <MobileTabs />;
+    // Use Tab navigation for all screen sizes, with different styling based on screen size
+    return <TabsNavigation isLargeScreen={isLargeScreen} />;
 }

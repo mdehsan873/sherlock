@@ -15,7 +15,7 @@ export default function ReportDashboard() {
                 contentContainerStyle={{ paddingBottom: 10 }}
                 className="flex-1"
             >
-                <View className="mx-[5%]">
+                <View className="mx-[5%] md:mx-[10%]">
                     This is a report {reportId}
                 </View>
             </ScrollView>

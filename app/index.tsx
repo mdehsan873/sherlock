@@ -18,7 +18,7 @@ export default function Index() {
               contentContainerStyle={{ paddingBottom: 40 }}
               className="flex-1"
           >
-              <View className="mx-[5%]">
+              <View className="mx-[5%] md:mx-[10%]">
                   <TopBarSection title={APP_NAME}/>
                   <HeroSection/>
                   <GlanceSection/>
