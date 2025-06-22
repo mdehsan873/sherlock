@@ -6,12 +6,11 @@ interface TopBarSectionProps {
     title: string;
 }
 
-// TODO Update app logo
 function TopBarSection({ title }: TopBarSectionProps) {
     return (
         <View className="my-5 flex flex-row items-center justify-center relative">
             <Image
-                source={images.message}
+                source={images.appLogo}
                 style={{ maxWidth: 45, maxHeight: 45 }}
                 resizeMode="contain"
                 className="absolute left-0"
