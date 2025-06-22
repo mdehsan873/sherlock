@@ -1,10 +1,11 @@
 import {Image, Text, View} from "react-native";
-import React, {ReactNode} from "react";
+import React from "react";
 import {images} from "@/constants/images";
+import ActionButton from "@/components/ActionButton";
 
 interface TopBarSectionProps {
     title: string;
-    actionButton?: ReactNode;
+    actionButton?: React.ReactElement<typeof ActionButton>;
 }
 
 function TopBarSection({ title, actionButton }: TopBarSectionProps) {

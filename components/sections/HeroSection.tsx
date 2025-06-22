@@ -1,6 +1,8 @@
 import { ImageBackground, Text, View } from "react-native";
 import ActionButton from "@/components/ActionButton";
 import { images } from "@/constants/images";
+import {router} from "expo-router";
+import React from "react";
 
 function HeroSection() {
     return (
@@ -18,7 +20,7 @@ function HeroSection() {
                     <Text className="text-sm text-center px-5 mb-4 text-white">
                         Care4U provides trusted, flexible care for your loved ones, with real-time updates via WhatsApp.
                     </Text>
-                    <ActionButton message={"Register Now!"} />
+                    <ActionButton message={"Register Now!"}  onPress={() => router.push("/login")} />
                 </View>
             </ImageBackground>
         </View>

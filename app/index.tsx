@@ -10,6 +10,7 @@ import TopBarSection from "@/components/sections/TopBarSection";
 import HeroSection from "@/components/sections/HeroSection";
 import {APP_NAME} from "@/constants/app";
 import ActionButton from "@/components/ActionButton";
+import {router} from "expo-router";
 
 export default function Index() {
   return (
@@ -20,7 +21,7 @@ export default function Index() {
               className="flex-1"
           >
               <View className="mx-[5%] md:mx-[10%]">
-                  <TopBarSection title={APP_NAME} actionButton={<ActionButton message={"Login"}/> } />
+                  <TopBarSection title={APP_NAME} actionButton={<ActionButton message={"Login"} onPress={() => router.push("/login")}/> } />
                   <HeroSection/>
                   <GlanceSection/>
                   <PopularCitiesSection/>
