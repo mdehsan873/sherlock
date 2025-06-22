@@ -9,7 +9,7 @@ import Divider from "@/components/sections/common/Divider";
 import QuickActionSection from "@/components/sections/dashboard/QuickActionSection";
 
 export default function PatientDashboard() {
-    const { patientId } =  useLocalSearchParams();
+    const { patientId } =  useLocalSearchParams() as { patientId: string }
 
     const handleBack = () => {
         router.back();
@@ -36,7 +36,7 @@ export default function PatientDashboard() {
                     <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
                     <VisitOverview {...visitOverview} />
                     <Divider/>
-                    <DashboardSummary/>
+                    <DashboardSummary patientId={patientId}/>
                     <Divider/>
                     <QuickActionSection/>
                 </View>

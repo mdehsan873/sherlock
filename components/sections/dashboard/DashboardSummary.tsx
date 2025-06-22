@@ -1,25 +1,38 @@
 import React from "react";
 import {Text, View} from 'react-native';
 import BenefitBox from "@/components/BenefitBox";
+import {router} from "expo-router";
 
+interface DashboardSummaryProps {
+    patientId: string;
+}
 
-const DashboardSummary = () => {
+const DashboardSummary = ({ patientId }: DashboardSummaryProps) => {
 
+    // TODO Get Dynamic data
     const summaryData = [
         {
             title: "Completed Visits",
             description: "22",
-            onPress: () => console.log("Completed visits clicked")
+            onPress: () => {
+                router.push(`/dashboard/${patientId}/visits/completed`)
+            }
         },
         {
             title: "Upcoming Visits",
             description: "3",
-            onPress: () => console.log("Upcoming visits clicked")
+            onPress: () => {
+                console.log("Upcoming visits clicked")
+                router.push(`/dashboard/${patientId}/visits/scheduled`)
+            }
         },
         {
             title: "Cancelled Visits",
             description: "1",
-            onPress: () => console.log("Cancelled visits clicked")
+            onPress: () => {
+                console.log("Cancelled visits clicked")
+                router.push(`/dashboard/${patientId}/visits/cancelled`)
+            }
         },
     ];
 
