@@ -1,12 +1,13 @@
 import {Image, Text, View} from "react-native";
-import React from "react";
+import React, {ReactNode} from "react";
 import {images} from "@/constants/images";
 
 interface TopBarSectionProps {
     title: string;
+    actionButton?: ReactNode;
 }
 
-function TopBarSection({ title }: TopBarSectionProps) {
+function TopBarSection({ title, actionButton }: TopBarSectionProps) {
     return (
         <View className="my-5 flex flex-row items-center justify-center relative">
             <Image
@@ -18,6 +19,11 @@ function TopBarSection({ title }: TopBarSectionProps) {
             <Text className="text-xl font-bold">
                 {title}
             </Text>
+            {actionButton && (
+                <View className="absolute right-0">
+                    {actionButton}
+                </View>
+            )}
         </View>
     )
 }

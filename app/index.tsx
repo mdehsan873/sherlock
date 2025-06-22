@@ -9,6 +9,7 @@ import ContactUsSection from "@/components/sections/ContactUsSection";
 import TopBarSection from "@/components/sections/TopBarSection";
 import HeroSection from "@/components/sections/HeroSection";
 import {APP_NAME} from "@/constants/app";
+import ActionButton from "@/components/ActionButton";
 
 export default function Index() {
   return (
@@ -19,7 +20,7 @@ export default function Index() {
               className="flex-1"
           >
               <View className="mx-[5%] md:mx-[10%]">
-                  <TopBarSection title={APP_NAME}/>
+                  <TopBarSection title={APP_NAME} actionButton={<ActionButton message={"Login"}/> } />
                   <HeroSection/>
                   <GlanceSection/>
                   <PopularCitiesSection/>
