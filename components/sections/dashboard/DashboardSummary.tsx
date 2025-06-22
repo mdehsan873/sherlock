@@ -7,9 +7,9 @@ const DashboardSummary = () => {
 
     const summaryData = [
         {
-            title: "Total Visits",
-            description: "25",
-            onPress: () => console.log("Total visits clicked")
+            title: "Completed Visits",
+            description: "22",
+            onPress: () => console.log("Completed visits clicked")
         },
         {
             title: "Upcoming Visits",
@@ -17,19 +17,9 @@ const DashboardSummary = () => {
             onPress: () => console.log("Upcoming visits clicked")
         },
         {
-            title: "Completed Visits",
-            description: "22",
-            onPress: () => console.log("Completed visits clicked")
-        },
-        {
             title: "Cancelled Visits",
             description: "1",
             onPress: () => console.log("Cancelled visits clicked")
-        },
-        {
-            title: "Average Duration",
-            description: "45 mins",
-            onPress: () => console.log("Average duration clicked")
         },
     ];
 

@@ -6,6 +6,7 @@ import DashboardHeader from "@/components/sections/dashboard/DashboardHeader";
 import DashboardSummary from "@/components/sections/dashboard/DashboardSummary";
 import PageHeader from "@/components/sections/common/PageHeader";
 import Divider from "@/components/sections/common/Divider";
+import QuickActionSection from "@/components/sections/dashboard/QuickActionSection";
 
 export default function PatientDashboard() {
     const { patientId } =  useLocalSearchParams();
@@ -36,7 +37,8 @@ export default function PatientDashboard() {
                     <VisitOverview {...visitOverview} />
                     <Divider/>
                     <DashboardSummary/>
-
+                    <Divider/>
+                    <QuickActionSection/>
                 </View>
             </ScrollView>
         </SafeAreaView>
