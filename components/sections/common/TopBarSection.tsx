@@ -8,6 +8,7 @@ interface TopBarSectionProps {
     actionButton?: React.ReactElement<typeof ActionButton>;
 }
 
+// TODO make this fix and not moveable when screen scrolls
 function TopBarSection({ title, actionButton }: TopBarSectionProps) {
     return (
         <View className="my-5 flex flex-row items-center justify-center relative">

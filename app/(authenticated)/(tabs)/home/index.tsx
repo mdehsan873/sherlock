@@ -4,6 +4,7 @@ import TopBarSection from "@/components/sections/common/TopBarSection";
 import PatientsInfoSection from "@/components/sections/home/PatientsInfoSection";
 import HeadingSection from "@/components/sections/common/HeadingSection";
 import {APP_NAME} from "@/constants/app";
+import QuickActionSection from "@/components/sections/home/QuickActionSection";
 
 // TODO Use username
 export default function Index() {
@@ -18,6 +19,7 @@ export default function Index() {
                     <TopBarSection title={APP_NAME}/>
                     <HeadingSection heading={"Welcome, Asad"}/>
                     <PatientsInfoSection/>
+                    <QuickActionSection/>
                 </View>
 
             </ScrollView>

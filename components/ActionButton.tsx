@@ -9,7 +9,7 @@ interface ActionButtonProps {
 
 const ActionButton = ({icon, message, onPress }: ActionButtonProps) => {
     return (
-        <TouchableOpacity onPress={onPress} activeOpacity={0.8} className="flex-row items-center justify-center self-center bg-primary px-4 py-2 rounded-xl">
+        <TouchableOpacity onPress={onPress} activeOpacity={0.8} className="flex-row items-center justify-center self-center bg-primary px-4 py-2 rounded-xl max-sm:w-full">
             { icon && <Image
                 source={icon}
                 className="mr-2"
