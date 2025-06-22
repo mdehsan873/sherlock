@@ -1,9 +1,7 @@
 import React from "react";
-import {SafeAreaView, ScrollView, Text, View} from "react-native";
-import TopBarSection from "@/components/sections/TopBarSection";
-import HeadingSection from "@/components/sections/HeadingSection";
-import PatientsInfoSection from "@/components/sections/PatientsInfoSection";
-import ReportsSection from "@/components/sections/ReportsSection";
+import {SafeAreaView, ScrollView, View} from "react-native";
+import TopBarSection from "@/components/sections/common/TopBarSection";
+import HeadingSection from "@/components/sections/common/HeadingSection";
 import {APP_NAME} from "@/constants/app";
 
 export default function Index() {

@@ -1,6 +1,6 @@
 import {router, useLocalSearchParams} from "expo-router";
 import {SafeAreaView, ScrollView, View} from "react-native";
-import PageHeader from "@/components/common/PageHeader";
+import PageHeader from "@/components/sections/common/PageHeader";
 import React from "react";
 
 // TODO make this dynamic

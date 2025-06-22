@@ -1,15 +1,8 @@
 import React from "react";
-import {SafeAreaView, ScrollView, Text, View} from "react-native";
-import TopBarSection from "@/components/sections/TopBarSection";
-import HeroSection from "@/components/sections/HeroSection";
-import GlanceSection from "@/components/sections/GlanceSection";
-import PopularCitiesSection from "@/components/sections/PopularCitiesSection";
-import BenefitsSection from "@/components/sections/BenefitsSection";
-import CheckupPlanSection from "@/components/sections/CheckupPlanSection";
-import FaqSection from "@/components/sections/FaqSection";
-import ContactUsSection from "@/components/sections/ContactUsSection";
-import PatientsInfoSection from "@/components/sections/PatientsInfoSection";
-import HeadingSection from "@/components/sections/HeadingSection";
+import {SafeAreaView, ScrollView, View} from "react-native";
+import TopBarSection from "@/components/sections/common/TopBarSection";
+import PatientsInfoSection from "@/components/sections/home/PatientsInfoSection";
+import HeadingSection from "@/components/sections/common/HeadingSection";
 import {APP_NAME} from "@/constants/app";
 
 // TODO Use username

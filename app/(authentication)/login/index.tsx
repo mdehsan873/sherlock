@@ -1,7 +1,7 @@
 import {SafeAreaView, View} from "react-native";
-import TopBarSection from "@/components/sections/TopBarSection";
+import TopBarSection from "@/components/sections/common/TopBarSection";
 import {APP_NAME} from "@/constants/app";
-import HeadingSection from "@/components/sections/HeadingSection";
+import HeadingSection from "@/components/sections/common/HeadingSection";
 import React from "react";
 import LoginSection from "@/components/sections/login/LoginSection";
 

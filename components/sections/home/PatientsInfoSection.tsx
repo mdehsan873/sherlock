@@ -1,7 +1,7 @@
 import {View} from "react-native";
 import PatientInfoBox from "@/components/PatientInfoBox";
 import {images} from "@/constants/images";
-import Divider from "@/components/common/Divider";
+import Divider from "@/components/sections/common/Divider";
 
 // TODO make this dynamic by calling API
 function PatientsInfoSection(){

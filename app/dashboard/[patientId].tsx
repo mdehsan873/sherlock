@@ -1,11 +1,11 @@
 import {router, useLocalSearchParams} from "expo-router";
 import {SafeAreaView, ScrollView, View} from "react-native";
 import React from "react";
-import VisitOverview from "@/components/dashboard/VisitOverview";
-import DashboardHeader from "@/components/dashboard/DashboardHeader";
-import DashboardSummary from "@/components/dashboard/DashboardSummary";
-import PageHeader from "@/components/common/PageHeader";
-import Divider from "@/components/common/Divider";
+import VisitOverview from "@/components/sections/dashboard/VisitOverview";
+import DashboardHeader from "@/components/sections/dashboard/DashboardHeader";
+import DashboardSummary from "@/components/sections/dashboard/DashboardSummary";
+import PageHeader from "@/components/sections/common/PageHeader";
+import Divider from "@/components/sections/common/Divider";
 
 export default function PatientDashboard() {
     const { patientId } =  useLocalSearchParams();
