@@ -25,21 +25,19 @@ export default function PatientDashboard() {
     };
 
     return (
-        <SafeAreaView className="flex-1 bg-background">
+        <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
             <PageHeader title={"Care Dashboard"}/>
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 10 }}
                 className="flex-1"
             >
-                <View className="mx-[5%] md:mx-[10%]">
-                    <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
-                    <VisitOverview {...visitOverview} />
-                    <Divider/>
-                    <DashboardSummary patientId={patientId}/>
-                    <Divider/>
-                    <QuickActionSection/>
-                </View>
+                <DashboardHeader user={username} patientName={patientName} patientRelation={patientRelation} />
+                <VisitOverview {...visitOverview} />
+                <Divider/>
+                <DashboardSummary patientId={patientId}/>
+                <Divider/>
+                <QuickActionSection/>
             </ScrollView>
         </SafeAreaView>
     )

@@ -7,17 +7,15 @@ import LoginSection from "@/components/sections/login/LoginSection";
 
 export default function LoginPage(){
     return (
-        <SafeAreaView className="flex-1 bg-background">
+        <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
+            <TopBarSection title={APP_NAME}/>
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 10 }}
                 className="flex-1"
             >
-                <View className="mx-[5%] md:mx-[10%]">
-                    <TopBarSection title={APP_NAME}/>
-                    <HeadingSection heading={"Enter Your Mobile Number"}/>
-                    <LoginSection/>
-                </View>
+                <HeadingSection heading={"Enter Your Mobile Number"}/>
+                <LoginSection/>
             </ScrollView>
 
         </SafeAreaView>

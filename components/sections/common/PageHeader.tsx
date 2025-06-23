@@ -10,7 +10,7 @@ interface PageHeaderProps {
 const PageHeader = ({title}: PageHeaderProps) => {
     const router = useRouter()
         return (
-                <View className="flex-row items-center justify-center mt-5 relative mb-2 mx-[5%] md:mx-[10%]">
+                <View className="flex-row items-center justify-center mt-5 relative mb-2">
                     <TouchableOpacity
                         onPress={() => router.back()}
                         className="absolute left-0"

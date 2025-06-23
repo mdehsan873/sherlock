@@ -69,6 +69,9 @@ function TabsNavigation({ isLargeScreen = false }) {
                     height: 60,
                     overflow: "hidden",
                 },
+                sceneStyle : {
+                    backgroundColor: "#eceff3",
+                }
             }}
         >
             {SCREEN_CONFIG.map((screen) => (

@@ -14,22 +14,20 @@ import {router} from "expo-router";
 
 export default function Index() {
   return (
-      <SafeAreaView className="flex-1 bg-background">
+      <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
+          <TopBarSection title={APP_NAME} actionButton={<ActionButton message={"Login"} onPress={() => router.push("/login")}/> } />
           <ScrollView
               showsVerticalScrollIndicator={false}
               contentContainerStyle={{ paddingBottom: 40 }}
               className="flex-1"
           >
-              <View className="mx-[5%] md:mx-[10%]">
-                  <TopBarSection title={APP_NAME} actionButton={<ActionButton message={"Login"} onPress={() => router.push("/login")}/> } />
-                  <HeroSection/>
-                  <GlanceSection/>
-                  <PopularCitiesSection/>
-                  <BenefitsSection/>
-                  <CheckupPlanSection/>
-                  <FaqSection/>
-                  <ContactUsSection/>
-              </View>
+              <HeroSection/>
+              <GlanceSection/>
+              <PopularCitiesSection/>
+              <BenefitsSection/>
+              <CheckupPlanSection/>
+              <FaqSection/>
+              <ContactUsSection/>
           </ScrollView>
 
       </SafeAreaView>

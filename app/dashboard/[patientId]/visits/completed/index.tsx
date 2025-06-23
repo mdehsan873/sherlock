@@ -38,17 +38,15 @@ export default function CompletedVisits() {
         },
     ]
     return (
-        <SafeAreaView className="flex-1 bg-background">
+        <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
+            <PageHeader title={APP_NAME}/>
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 40 }}
                 className="flex-1"
             >
-                <View className="mx-[5%] md:mx-[10%]">
-                    <PageHeader title={APP_NAME}/>
-                    <HeadingSection heading={"Completed Visits"}/>
-                    <ReportListSection reports={completedVisits}/>
-                </View>
+                <HeadingSection heading={"Completed Visits"}/>
+                <ReportListSection reports={completedVisits}/>
 
             </ScrollView>
 

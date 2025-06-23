@@ -8,17 +8,15 @@ export default function ReportDashboard() {
     const { reportId } =  useLocalSearchParams();
 
     return (
-        <SafeAreaView className="flex-1 bg-background">
-            <PageHeader title={"Checkup Report"}/>
-            <ScrollView
-                showsVerticalScrollIndicator={false}
-                contentContainerStyle={{ paddingBottom: 10 }}
-                className="flex-1"
-            >
-                <View className="mx-[5%] md:mx-[10%]">
+        <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
+                <PageHeader title={"Checkup Report"}/>
+                <ScrollView
+                    showsVerticalScrollIndicator={false}
+                    contentContainerStyle={{ paddingBottom: 10 }}
+                    className="flex-1"
+                >
                     This is a report {reportId}
-                </View>
-            </ScrollView>
+                </ScrollView>
         </SafeAreaView>
     )
 

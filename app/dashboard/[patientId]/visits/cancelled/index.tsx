@@ -39,17 +39,15 @@ export default function CancelledVisits() {
     const { patientId } = useLocalSearchParams();
 
     return (
-        <SafeAreaView className="flex-1 bg-background">
+        <SafeAreaView className="flex-1 mx-[5%] md:mx-[10%]">
+            <PageHeader title={APP_NAME}/>
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 40 }}
                 className="flex-1"
             >
-                <View className="mx-[5%] md:mx-[10%]">
-                    <PageHeader title={APP_NAME}/>
-                    <HeadingSection heading={"Cancelled Visits"}/>
-                    <ReportListSection reports={ cancelledVisits } />
-                </View>
+                <HeadingSection heading={"Cancelled Visits"}/>
+                <ReportListSection reports={ cancelledVisits } />
 
             </ScrollView>
 
