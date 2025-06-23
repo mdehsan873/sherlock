@@ -1,17 +1,27 @@
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Alert, Image, Text, TouchableOpacity, View} from 'react-native';
 import {router} from "expo-router";
 
-interface ReportCardProps {
+type ReportType = "completed" | "scheduled" | "cancelled";
+
+export interface ReportCardProps {
     reportId: string;
     title: String;
     description: String;
     icon?: any;
     metadata?: String;
+    reportType: ReportType;
 }
 
-const ReportCard = ({reportId, title, description, icon, metadata}: ReportCardProps) => {
+const ReportCard = ({reportId, title, description, icon, metadata, reportType}: ReportCardProps) => {
     const handlePress = () => {
-        router.push(`/report/${reportId}/`)
+        if(reportType === "completed"){
+            router.push(`/report/${reportId}/`)
+        } else if (reportType === "scheduled"){
+            Alert.alert("Upcoming Visit", "This report is not yet generated");
+        } else if (reportType === "cancelled"){
+            Alert.alert("Cancelled Visit", "This visit was cancelled, No report available");
+        }
+
     }
 
     return (

@@ -1,12 +1,41 @@
 import React from "react";
-import {SafeAreaView, ScrollView, Text, View} from "react-native";
+import {SafeAreaView, ScrollView, View} from "react-native";
 import TopBarSection from "@/components/sections/common/TopBarSection";
 import HeadingSection from "@/components/sections/common/HeadingSection";
-import PatientsInfoSection from "@/components/sections/home/PatientsInfoSection";
-import ReportsSection from "@/components/sections/report/ReportsSection";
+import ReportListSection from "@/components/sections/report/ReportListSection";
 import {APP_NAME} from "@/constants/app";
+import {ReportCardProps} from "@/components/ReportCard";
+import {icons} from "@/constants/icons";
 
 export default function Index() {
+    // TODO make this Dynamic
+    const visits :ReportCardProps[] = [
+        {
+            reportId:"110",
+            title:"Asad Rizvi",
+            description:"Bhelupur Road, Varanasi",
+            metadata:"Tue, 10:00AM 2025-06-12",
+            icon:icons.home,
+            reportType:"scheduled"
+        },
+        {
+            reportId:"111",
+            title:"Asad Rizvi",
+            description:"Bhelupur Road, Varanasi",
+            metadata:"Tue, 10:00AM 2025-06-12",
+            icon:icons.home,
+            reportType:"completed"
+        },
+        {
+            reportId:"112",
+            title:"Asad Rizvi",
+            description:"Bhelupur Road, Varanasi",
+            metadata:"Tue, 10:00AM 2025-06-12",
+            icon:icons.home,
+            reportType:"cancelled"
+        },
+    ]
+
     return (
         <SafeAreaView className="flex-1 bg-background">
             <ScrollView
@@ -17,7 +46,7 @@ export default function Index() {
                 <View className="mx-[5%] md:mx-[10%]">
                     <TopBarSection title={APP_NAME}/>
                     <HeadingSection heading={"Reports"}/>
-                    <ReportsSection/>
+                    <ReportListSection reports={visits} />
                 </View>
 
             </ScrollView>
