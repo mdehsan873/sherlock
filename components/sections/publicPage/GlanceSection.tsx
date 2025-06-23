@@ -12,7 +12,6 @@ function GlanceSection() {
             <FlatList
                 horizontal
                 data={GLANCE}
-                className="flex justify-center"
                 keyExtractor={(item) => item.id}
                 showsHorizontalScrollIndicator={false}
                 ItemSeparatorComponent={() => <View className="m-1"/>}
