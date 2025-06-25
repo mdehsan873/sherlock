@@ -7,9 +7,7 @@ function QuickActionSection(){
         <View>
             <View className="flex flex-row flex-wrap gap-y-2 gap-x-2">
                 <ActionButton message={"Edit Profile"}/>
-                <ActionButton message={"Edit home care need"}/>
-                <ActionButton message={"Edit disease"}/>
-                <ActionButton message={"Edit Frequency"}/>
+                <ActionButton message={"Edit Subscription"}/>
                 <ActionButton message={"Cancel Subscription"}/>
             </View>
         </View>
