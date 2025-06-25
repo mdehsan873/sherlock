@@ -11,5 +11,8 @@ export const icons = {
     back: require('../assets/icons/back.png'),
     home: require('../assets/icons/home.png'),
     profile: require('../assets/icons/profile.png'),
-    report: require('../assets/icons/report.png')
+    report: require('../assets/icons/report.png'),
+    privacyPolicy: require('../assets/icons/privacy_policy.png'),
+    support: require('../assets/icons/support.png'),
+    tnc: require('../assets/icons/terms_and_condition.png'),
 };
